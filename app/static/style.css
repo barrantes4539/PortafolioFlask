@@ -1,0 +1,431 @@
+html {
+    font-family: 'Rufina', sans-serif;
+}
+
+body {
+    background-color: #efefef;
+    margin: 0;
+    color: #481e86;
+}
+
+a {
+    transition: color 0.3s ease;
+    font-family: 'Rubik', sans-serif;
+    color: #481e86;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #8FCF2F;
+}
+
+html body header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 3px 0 5px #aaa;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+html body nav ul {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+html body nav ul li {
+    display: inline-block;
+}
+
+html body nav ul li a {
+    padding: 0 15px;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 20px 50px;
+    justify-content: center;
+
+}
+
+.hero .hero-content {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero h1 {
+    font-family: 'Rufina', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 50px;
+}
+
+.left {
+    width: 600px;
+    align-self: center;
+}
+
+.btn {
+    background-color: #8FCF2F;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    color: #481e86;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 1200px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.green {
+    color: #5DAA32;
+}
+
+.padded {
+    padding: 20px 30px;
+}
+
+.vert-pad {
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 1px 2px #ddd;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.third {
+    width: 360px;
+    margin: 20px;
+}
+
+.contact-form input {
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+
+.contact-form textarea {
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    height: 100px;
+    padding: 15px 10px;
+    resize: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+}
+
+.contact-form button:hover {
+    cursor: pointer;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.footer {
+    padding: 80px 0 0 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.made-with {
+    padding: 0 30px;
+    color: #555;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+/* Estilos para el botón de menú toggle */
+.menu-toggle {
+    display: none; /* Oculta el botón en pantallas grandes */
+    cursor: pointer;
+}
+/* Estilos para pantallas pequeñas, como smartphones */
+@media (max-width: 768px) {
+
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #fff;
+        width: 100%; /* Cambia el ancho para ocupar todo el espacio disponible */
+        height: auto;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+       /* Estilos para el botón de menú hamburguesa */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin-left: 110px;
+        align-self: center;
+    }
+    .menu-toggle span {
+        display: block;
+        height: 2px;
+        width: 25px;
+        background-color: #333;
+        margin: 5px auto;
+    }
+
+        /* Estilos para mostrar el menú al hacer clic en el botón de menú toggle */
+    nav ul.show {
+        display: flex;
+
+    }
+
+    nav ul li a{
+        margin-top: 30px;
+    }
+
+
+    /* Estilos para los elementos de la lista de navegación */
+    nav ul li {
+        padding: 10px 0px;
+        text-align: center;
+        border: solid rgba(0, 0, 0, 0.1);
+        width: 100%; /* Cambia el ancho para ocupar todo el espacio disponible */
+    }
+    
+    /* Elimina el margen superior del primer elemento de la lista */
+    nav ul li:first-child {
+        margin-top: 0;
+    }
+
+
+
+    .hero {
+        display: flex;
+        margin: 0 auto;
+    }
+
+
+    body,
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    html body nav ul { 
+        font-size: 19px;
+    }
+
+   
+    .hero h1 {
+        font-size: 30px;
+        /* Ajusta el tamaño de letra para pantallas pequeñas */
+    }
+
+    .hero p {
+        margin-bottom: 40px;
+        /* Reduce el margen inferior para pantallas pequeñas */
+        width: 100%;
+    }
+
+    .hero-content img {
+        display: none;
+    }
+
+    .hero {
+        padding: 0px;
+        justify-content: center;
+        margin-bottom: 20px;
+    
+    }
+    
+    .hero .hero-content .left {
+
+        padding: 30px 50px;
+    }
+    .hero .hero-content .left a {
+
+        background-color: #5DAA32;
+        color: #fff;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .row {
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .left {
+        display: block;
+    }
+
+    .right {
+        display: block;
+        padding: 20px 5px;
+        margin-right: 10px;
+    }
+
+    .card {
+        padding: 0px;
+        width: 100%;
+        height: 230px;
+
+    }
+
+    .card h3 {
+        margin-left: 50px;
+    }
+
+    .card a {
+        padding: 10px 10px;
+        background-color: #5DAA32;
+        color: #fff;
+        border-radius: 10px;
+        margin-left: 50px;
+        width: 100%;
+
+
+    }
+
+    /* Sección first */
+    .left {
+        width: 100%;
+   
+    }
+
+
+    /* Sección second */
+    .card {
+        margin: 20px 0;
+    }
+
+    /* Sección third */
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .footer .row {
+        display: inline-block;
+    }
+}
+
+/* Muestra la lista de navegación en dispositivos más grandes */
+@media (min-width: 769px) {
+    nav ul {
+        display: block !important;
+        /* Usa !important para anular la regla anterior */
+    }
+
+    /* Ajusta otros estilos según sea necesario */
+}
+
+/* Estilos para pantallas medianas, como tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Agrega tus estilos específicos para pantallas medianas aquí */
+    /* Por ejemplo: */
+    .hero h1 {
+        font-size: 40px;
+        /* Ajusta el tamaño de letra para pantallas medianas */
+    }
+
+    .hero p {
+        margin-bottom: 30px;
+        /* Puedes cambiar el margen nuevamente para pantallas medianas */
+    }
+
+    /* Sección first */
+    .left {
+        width: 50%;
+    }
+
+    /* Sección second */
+    .card {
+        width: calc(33.33% - 40px);
+        margin: 20px;
+    }
+}
+
+/* Estilos para pantallas grandes, como computadoras de escritorio */
+@media (min-width: 1025px) {
+
+    /* Agrega tus estilos específicos para pantallas grandes aquí */
+    /* Por ejemplo: */
+    .hero h1 {
+        font-size: 50px;
+        /* Ajusta el tamaño de letra para pantallas grandes */
+    }
+
+    .hero p {
+        margin-bottom: 50px;
+        /* Puedes cambiar el margen nuevamente para pantallas grandes */
+    }
+
+    /* Sección first */
+    .left {
+        width: 60%;
+    }
+
+    /* Sección second */
+    .card {
+        width: calc(25% - 40px);
+        margin: 20px;
+    }
+}
